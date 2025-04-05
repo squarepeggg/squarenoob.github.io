@@ -1,125 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sweetobox</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SweetoBox</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background: #f7f4f1;
-      color: #000;
-      text-align: center;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('image.png') no-repeat center top;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 60px;
+      color: #000;
     }
 
-    header {
-      background: linear-gradient(to bottom, #ccc, #f7f4f1);
-      padding: 30px 20px 10px;
-    }
-
-    .logo-text {
-      font-size: 2rem;
-      margin: 10px 0 0;
-    }
-
-    .subtext {
-      font-size: 1rem;
-      letter-spacing: 2px;
-    }
-
-    .main-logo {
-      margin-top: 20px;
-      max-width: 180px;
-    }
-
-    .sweetobox-name {
-      font-size: 2rem;
-      font-family: 'Brush Script MT', cursive;
-      margin: 15px 0;
-    }
-
-    .btn {
-      display: block;
-      margin: 20px auto;
-      width: 80%;
-      max-width: 300px;
-      padding: 15px;
-      font-size: 1rem;
-      font-weight: bold;
-      border: 2px solid #aaa;
+    .button {
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 2px solid #555;
+      padding: 15px 30px;
+      margin: 10px;
       border-radius: 30px;
-      background: none;
+      font-size: 18px;
       text-decoration: none;
       color: #000;
-      transition: 0.3s;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
-    .btn:hover {
-      background-color: #eee;
+    .button:hover {
+      background-color: #f0f0f0;
     }
 
-    footer {
-      background: linear-gradient(to top, #ccc, #f7f4f1);
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9rem;
+    .contact {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 16px;
     }
 
-    .icon {
-      width: 30px;
-      vertical-align: middle;
-      margin: 0 8px;
-    }
-
-    .contact-info {
-      margin-top: 10px;
-    }
-
-    a {
-      color: inherit;
+    .contact a {
+      color: #000;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .footer-icons img {
-      width: 40px;
-      margin: 0 10px;
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="subtext">home bakery</div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bow_font_awesome.svg/1200px-Bow_font_awesome.svg.png" alt="bow icon" width="50" />
-    <div class="logo-text">SWEETOBOX</div>
-    <div class="subtext">MADE WITH LOVE</div>
-  </header>
+  <a href="#cookie-menu" class="button">COOKIE MENU</a>
+  <a href="#place-order" class="button">PLACE AN ORDER</a>
+  <a href="#feedback" class="button">CUSTOMER FEEDBACK</a>
+  <a href="#ingredients" class="button">INGREDIENTS</a>
 
-  <main>
-    <img class="main-logo" src="https://cdn-icons-png.flaticon.com/512/877/877951.png" alt="cookie bag" />
-    <div class="sweetobox-name">Sweetobox <span style="font-family: sans-serif;">♡</span></div>
-
-    <a class="btn" href="#">COOKIE MENU</a>
-    <a class="btn" href="#">PLACE AN ORDER</a>
-    <a class="btn" href="#">CUSTOMER FEEDBACK</a>
-    <a class="btn" href="#">INGREDIENTS</a>
-  </main>
-
-  <footer>
-    <div class="footer-icons">
-      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046872.png" alt="flour" />
-      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046901.png" alt="sugar" />
-    </div>
-    <div class="contact-info">
-      <p>📧 sweetoboxx@gmail.com</p>
-      <p>📸 <a href="https://instagram.com/sweetobox_" target="_blank">@sweetobox_</a></p>
-    </div>
-    <div class="footer-icons">
-      <img src="https://cdn-icons-png.flaticon.com/512/1028/1028493.png" alt="hearts" />
-    </div>
-  </footer>
+  <div class="contact">
+    <p><a href="mailto:sweetoboxx@gmail.com">sweetoboxx@gmail.com</a></p>
+    <p><a href="https://instagram.com/sweetobox_">@sweetobox_</a></p>
+  </div>
 
 </body>
 </html>
+
